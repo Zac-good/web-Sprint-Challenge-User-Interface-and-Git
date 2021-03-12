@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px solid #4F4F4F
 }
 
 html, body {
@@ -64,6 +65,36 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+.header {
+    display: flex;
+    align-items: baseline;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.head {
+   width: 20%;
+    
+
+}
+.headNav nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ .headNav {
+    width: 80%;
+} 
+.headNav nav a{
+    text-decoration: none;
+    color: Black;
+    font-size: 0.8rem;
+}
+.headerImg{
+   display: flex;
+   justify-content: center;
+    padding: 2%;
 }
 
 .container {
