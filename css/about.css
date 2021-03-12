@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+    border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,10 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-* {
+/* * {
     box-sizing: border-box;
     border: 1px solid #4F4F4F
-}
+} */
 
 html, body {
     height: 100%;
@@ -66,11 +66,20 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.about-page {
+    margin-bottom: 4%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+}
 .header {
     display: flex;
     align-items: baseline;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 1% auto;
     
 }
 .head {
@@ -89,7 +98,7 @@ p {
 .headNav nav a{
     text-decoration: none;
     color: Black;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .headerImg{
    display: flex;
@@ -99,4 +108,64 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+.middle-content1, .middle-content2{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 4%;
+    justify-content:space-between ;
+    
+}
+.middle-content1 .conTxt1{
+    width:45%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+   
+} 
+.middle-content1 .conTxt2{
+    width: 45%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+   
+}
+
+.middle-content2 .conTxt1{
+    width: 45%;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed black;
+    
+   
+}
+.middle-content2 .conTxt2{
+    width: 45%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+   
+}
+button{
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 5% 
+}
+.bottom{
+    padding-bottom: 2%;
+}
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
 }
